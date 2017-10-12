@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    {#todo: add custom icon?#}
+    <link rel="icon" href="static/img/pooWhite.png" type="image/png">
+
+    <link href="static/css/styles.css" rel="stylesheet">
+    <title>Bathroom List</title>
+</head>
+<body>
+    <!--Navigation Content-->
+    <nav class="navbar navbar-toggleable-md fixed-top">
+      <div class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#nav-links">
+        <div id="nav-icon"  class="animated rubberBand">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <header>
+        <h4><img id="brand-icon" src="../static/img/pooWhite.png" class="animated" alt=""> iGotta</h4>
+      </header>
+      <div id="nav-links" class="collapse navbar-collapse">
+        <hr>
+        <div class="navbar-nav">
+            {#TODO: create custom toilet icon / brand icon, etc., replace rocket#}
+          <a id="home-btn" class="nav-btn nav-item nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+          <a class="nav-item nav-link" href="#"><i class="fa fa-rocket" aria-hidden="true"></i> Go!</a>
+          <a class="nav-item nav-link" href="#"><i class="fa fa-plus-square" aria-hidden="true"></i> Add New/Review</a>
+          <a class="nav-item nav-link" href="#"><i class="fa fa-list" aria-hidden="true"></i> Browse</a>
+          <a class="nav-item nav-link" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i><i class="fa fa-user-plus" aria-hidden="true"></i> Login/Register</a>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+            <div id="nudge"></div>
+            <div id="startLat"></div>
+            <div id="startLon"></div>
+            <div id="currentLat"></div>
+            <div id="currentLon"></div>
+
+    <footer>
+        <small><cite>"The Number One App for Your Number Two Needs"</cite></small>
+        <a class="nav-item nav-link" href="https://github.com/iGotta1"><i class="fa fa-github-alt" aria-hidden="true"></i> GitHub</a>
+    </footer>
+  <!-- scripts -->
+  <script src="../static/js/jQuery.js"></script>
+  <script src="../static/js/tether.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+{#  <script src="../static/js/particles.min.js"></script>#}
+{#  <script src="../static/js/app.js"></script>#}
+  <script src="../static/js/scripts.js"></script>
+</body>
+</html>
