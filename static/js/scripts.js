@@ -27,10 +27,10 @@ $( document ).ready(function() {
    /*todo: make bathroom-list.html render on clicking, from there take long/lat*/
 
    //watch position --battery drain, remember to call clearWatch when done tracking the person
-     var watchId = navigator.geolocation.watchPosition(function(position){
-       document.getElementById('currentLat').innerHTML = position.coords.latitude;
-       document.getElementById('currentLon').innerHTML = position.coords.longitude;
-     });
+   //   var watchId = navigator.geolocation.watchPosition(function(position){
+   //     document.getElementById('currentLat').innerHTML = position.coords.latitude;
+   //     document.getElementById('currentLon').innerHTML = position.coords.longitude;
+   //   });
 
 
 
@@ -76,7 +76,7 @@ else {
   };
 
   navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
-  /*use clearWatch to remove position tracking*/
+  /*use clearWatch to remove position tracking-->must turn off network caching*/
    // navigator.geolocation.clearWatch(watchId);
 
 });
