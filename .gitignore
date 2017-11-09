@@ -137,4 +137,4 @@ ENV/
 .mypy_cache/
 
 #idea IDEs
-.idea
+.idea/
